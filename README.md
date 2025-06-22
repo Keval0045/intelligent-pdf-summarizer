@@ -95,4 +95,23 @@ Make sure Azure Functions Core Tools are installed:
 - Use Key Vault for secret management in production
 - Use Application Settings in Azure for environment variables
 
+### Note
+
+I ran into a few technical problems while trying to run this project locally, so I wasn’t able to get it fully working or record a demo video. Here’s a quick rundown of the issues and what I tried to do to fix them:
+
+1. **Azure Functions wouldn’t start properly**  
+   The local runtime kept giving errors because of version mismatches. I updated the Azure Functions Core Tools and switched to Python 3.9 to match the requirements, but some errors still popped up.
+
+2. **Authentication problems with Cognitive Services**  
+   My API calls kept failing with unauthorized errors. I double-checked all the keys and endpoints, even regenerated the keys a few times, but it still wouldn’t authenticate right in my local setup.
+
+3. **Blob trigger didn’t activate when uploading files**  
+   Even after uploading PDFs, the function never triggered locally. I tried switching between the Azure Storage Emulator and Azurite, and verified the connection strings multiple times, but no luck getting the trigger to fire.
+
+4. **OpenAI API requests timed out frequently**  
+   Calls to the OpenAI endpoint would sometimes hang or time out. I tested my network and tweaked the request settings, but the timeouts kept happening and prevented me from fully testing the summarization feature.
+
+Although I couldn’t get everything running end-to-end, I made sure the code and configs are all set up correctly according to the project requirements.
+
+
 
