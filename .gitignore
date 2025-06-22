@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+*.env
+
+# VS Code
+.vscode/
+
+# Azure Functions local settings
+local.settings.json
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+.pytest_cache/
+
+# Mac system files
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Node modules (if any frontend exists)
+node_modules/
+
+# Azure tools
+*.azure*
+
+# OS files
+Thumbs.db
+ehthumbs.db
